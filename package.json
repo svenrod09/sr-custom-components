@@ -28,6 +28,9 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
   "scripts": {
     "dev": "npm run storybook",
     "build": "npm run clean && tsc && npm run copyfiles",
@@ -37,7 +40,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_86c3119e891031b",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "dependencies": {
     "react": "^18.3.1",
